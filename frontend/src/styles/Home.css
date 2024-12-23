@@ -3,7 +3,7 @@ nav{
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: #507659;
+    background-color: #9eceda;
     padding: 20px;
     border-bottom: 5px solid;
 }
@@ -20,7 +20,7 @@ h1{
 /* ! About Container */
 .aboutContainer{
     display: flex;
-    background-color: #d2dcd4;
+    background-color: #629c6d;
     justify-content: center;
     padding: 100px 50px;
     align-items: center;
@@ -49,31 +49,63 @@ h2{
 /* !Capsule Form  */
 .capsuleForm{
     padding: 100px 50px;
-    background-color: #bdbdd2;
+    background-color: #9b8a67;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
+    align-items: center;
+    border-bottom: 5px solid;
+}
+
+.imgCaptionContainer{
+    width: 50%;
+}
+
+.imgCaptionContainer p{
+    font-size: 20px;
 }
 
 #userImg{
-    width: 50%;
-    border: 2px solid;
+    width: 100%;
+    /* border: 3px solid; */
 }
 
+/* ! Form container */
 .formContainer{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    width: 40%;
+    padding: 30px;
+    padding-top: 100px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    width: 30%;
     gap: 20px;
+    border: 3px solid #828687;
+    background-color: #828687;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    padding: 0px 20px;
+}
+
+.formContainer p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.formContainer input[type="email"], textarea, input[type="date"]{
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    background-color: #828687;
+    color: black;
     border: 2px solid;
 }
 
-.formContainer input[type="email"], textarea{
-    font-size: 20px;
-    padding: 10px;
-    border: 2px solid;;
-    outline: none
+input::placeholder, textarea::placeholder{
+    color: black;
 }
 
 .inputContainer{
@@ -83,19 +115,55 @@ h2{
 }
 
 textarea{
-    height: 200px;
+    height: 150px;
 }
 
 label{
     font-weight: bold;
 }
 
-#subbtn{
+.subbtnContainer{
     width: fit-content;
-    font-size: 20px;
     padding: 5px 10px;
     font-weight: bold;
     border: 2px solid;
     background-color: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+#shovelIcon{
+    font-size: 30px;
+}
+
+.subbtnContainer button{
+    background-color: #828687;
+    
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.subbtnContainer:hover{
+    opacity: 0.6;
+}
+
+/* ! Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #918c5e;
+}
+
+#githubIcon{
+    font-size: 25px;
+    margin-top: 5px;
+    color: black;
 }

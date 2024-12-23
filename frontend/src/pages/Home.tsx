@@ -2,6 +2,9 @@ import skellyIcon from "../assets/skellyIcon.png";
 import skellyDigging from "../assets/skellyDigging.png";
 import userImg from "../assets/tree.png";
 
+import { TbShovel } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
+
 import "../styles/Home.css";
 
 export const Homepage = () =>{
@@ -26,9 +29,20 @@ export const Homepage = () =>{
             </div>
 
             <form className="capsuleForm">
-                <img id="userImg" src={userImg} alt="userImg"/>
-
+                <div className="imgCaptionContainer">
+                    <img id="userImg" src={userImg} alt="userImg"/>
+                    <p> Your chosen image </p>
+                </div>
+                
                 <div className="formContainer">
+                    <div>
+                        <h3> RIP </h3>
+                        <p> A Past Memory </p>
+                    </div>
+                    <div className="inputContainer">
+                        <label> DATE </label>
+                        <input type="date" placeholder="Date"/>
+                    </div>
                     <div className="inputContainer">
                         <label> EMAIL </label>
                         <input type="email" placeholder="Email"/>
@@ -36,7 +50,7 @@ export const Homepage = () =>{
                     
                     <div className="inputContainer">
                         <label> MESSAGE </label>   
-                        <textarea placeholder="Remember when..."> </textarea>
+                        <textarea placeholder="Remember when..."></textarea>
                     </div>
                     
                     <div className="inputContainer">
@@ -44,9 +58,22 @@ export const Homepage = () =>{
                         <input type="file"/>
                     </div>
                     
-                    <button id="subbtn" type="submit"> Bury Capsule </button>
+                    <div className="subbtnContainer">
+                        <TbShovel id="shovelIcon"/>
+                        <button type="submit"> Bury Capsule </button>
+                    </div>
                 </div>
             </form>
+            
+            <footer>
+                <p> Copyright @ Pauleena Phan 2024 </p>
+                <a 
+                    href="https://github.com/pauleenaphan/remember-when" 
+                    target="_blank" 
+                >
+                    <FaGithub id="githubIcon" />
+                </a>
+            </footer>
         </>
     )
 }
