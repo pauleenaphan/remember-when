@@ -1,0 +1,101 @@
+/* ! Navbar */
+nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #507659;
+    padding: 20px;
+    border-bottom: 5px solid;
+}
+
+#skellyIcon{
+    width: 3%;
+    height: auto;
+}
+
+h1{
+    font-size: 30px;
+}
+
+/* ! About Container */
+.aboutContainer{
+    display: flex;
+    background-color: #d2dcd4;
+    justify-content: center;
+    padding: 100px 50px;
+    align-items: center;
+    border-bottom: 5px solid;
+}
+
+.aboutDesc{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.aboutDesc p{
+    font-size: 30px;
+}
+
+#skellyDigImg{
+    width: 30%;
+}
+
+/* !Capsule Form  */
+.capsuleForm{
+    padding: 100px 50px;
+    background-color: #bdbdd2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#userImg{
+    width: 50%;
+    border: 2px solid;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    gap: 20px;
+    border: 2px solid;
+}
+
+.formContainer input[type="email"], textarea{
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid;;
+    outline: none
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+textarea{
+    height: 200px;
+}
+
+label{
+    font-weight: bold;
+}
+
+#subbtn{
+    width: fit-content;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid;
+    background-color: none;
+    cursor: pointer;
+}
