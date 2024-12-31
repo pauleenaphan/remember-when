@@ -25,6 +25,7 @@ h1{
     padding: 100px 50px;
     align-items: center;
     border-bottom: 5px solid;
+    flex-wrap: wrap;
 }
 
 .aboutDesc{
@@ -55,6 +56,7 @@ h2{
     gap: 50px;
     align-items: center;
     border-bottom: 5px solid;
+    flex-wrap: wrap;
 }
 
 .imgCaptionContainer{
@@ -166,4 +168,48 @@ footer{
     font-size: 25px;
     margin-top: 5px;
     color: black;
+}
+
+@media (max-width: 768px) {
+    nav{
+        justify-content: center;
+    }
+
+    #skellyIcon{
+        width: 6%;
+    }
+    
+    .aboutContainer{
+        flex-direction: column;
+    }
+
+    .aboutDesc{
+        width: 90%;
+    }
+
+    #skellyDigImg{
+        width: 70%;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .aboutDesc p{
+        font-size: 25px;
+    }
+
+    .formContainer{
+        width: 80%;
+        padding-top: 60px;
+    }
+
+    .imgCaptionContainer{
+        width: 80%;
+    }
+
+    textarea{
+        height: 100px;
+    }
+
 }
