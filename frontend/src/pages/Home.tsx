@@ -66,7 +66,7 @@ export const Homepage = () =>{
             </form>
             
             <footer>
-                <p> Copyright @ Pauleena Phan 2024 </p>
+                <p> Copyright @ Pauleena Phan 2025 </p>
                 <a 
                     href="https://github.com/pauleenaphan/remember-when" 
                     target="_blank" 
