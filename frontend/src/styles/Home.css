@@ -188,7 +188,7 @@ footer{
     }
 
     .aboutDesc{
-        width: 90%;
+        width: 100%;
     }
 
     #skellyDigImg{
@@ -204,12 +204,28 @@ footer{
     }
 
     .formContainer{
-        width: 80%;
-        padding-top: 60px;
+        width: 90%;
+        padding-top: 50px;
     }
 
     .imgCaptionContainer{
         width: 80%;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+
+    .formContainer input[type="email"], .formContainer input[type="date"], textarea{
+        font-size: 25px; 
+    }
+
+    .subbtnContainer button{
+        font-size: 25px;
     }
 
     textarea{
